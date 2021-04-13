@@ -14,11 +14,32 @@
     <script src="js/init.js"></script>
   </head>
   <body>
-    <nav><ul>
-        <li><a href="index.html">Sesion</a></li>
-        <li><a href="chat.html">Chat</a></li>
-        <li><a href="alumnos.html">Alumnos</a></li>
-    </ul></nav>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Perfil</a></li>
+  <li><a href="chat.html">Chat</a></li>
+  <li><a href="alumnos.html">Alumnos</a></li>
+</ul>
+
     <fieldset>
       <legend>Email</legend>
       <output id="email"><progress max="100">Cargando…</progress></output>
